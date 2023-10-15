@@ -1,5 +1,5 @@
 -- Initial
-USE DATABASES schema1;
+USE schema1;
 DROP TABLE IF EXISTS corrections;
 DROP TABLE IF EXISTS users;
 DROP TABLE IF EXISTS projects;

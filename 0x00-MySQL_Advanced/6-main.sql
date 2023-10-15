@@ -1,4 +1,5 @@
 -- Show and add bonus correction
+USE schema1;
 SELECT * FROM projects;
 SELECT * FROM corrections;
 
