@@ -1,0 +1,5 @@
+// Connect to the MongoDB server (localhost by default)
+use admin; // Switch to the admin database (required for listing all databases)
+db.runCommand({ listDatabases: 1 }).databases.forEach(function(database) {
+    print(database.name);
+});
