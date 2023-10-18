@@ -1,2 +1,2 @@
 // Connect to the MongoDB server (localhost by default)
-show dbs
+show dbs;

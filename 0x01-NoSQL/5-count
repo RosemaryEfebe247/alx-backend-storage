@@ -1,2 +1,2 @@
 // Function to count a collection
-db.school.count()
+db.school.count();
