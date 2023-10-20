@@ -30,8 +30,11 @@ class Cache:
             fn: Callable = None) -> Union[str, bytes, int, float, None]:
         """ Get data and convert to fn if fn not none"""
         data = self._redis.get(key)
-        if fn is not None and data is not None:
-            return fn(data)
+        if data is not None:
+            if fn is not None:
+                return fn(data)
+            elif isinstance(data, bytes):
+                return data.decode('utf-8')
         return data
 
     def get_str(self, key: str) -> Union[str, None]:
